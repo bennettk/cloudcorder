@@ -20,6 +20,7 @@
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
 		C1889231114C040B004CBD8C /* soundcloud.png in Resources */ = {isa = PBXBuildFile; fileRef = C1889230114C040B004CBD8C /* soundcloud.png */; };
+		C1889251114C0D3F004CBD8C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1889250114C0D3F004CBD8C /* AudioToolbox.framework */; };
 		C1F3FF7C114AEF6800B09C1E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F3FF7B114AEF6800B09C1E /* AVFoundation.framework */; };
 		C1F3FF86114AF6EF00B09C1E /* cloudcorder.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F3FF85114AF6EF00B09C1E /* cloudcorder.png */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		32CA4F630368D1EE00C91783 /* cloudcorder_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cloudcorder_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* cloudcorder-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cloudcorder-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C1889230114C040B004CBD8C /* soundcloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soundcloud.png; path = resources/soundcloud.png; sourceTree = "<group>"; };
+		C1889250114C0D3F004CBD8C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C1F3FF7B114AEF6800B09C1E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C1F3FF85114AF6EF00B09C1E /* cloudcorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloudcorder.png; path = resources/cloudcorder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +61,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
 				C1F3FF7C114AEF6800B09C1E /* AVFoundation.framework in Frameworks */,
+				C1889251114C0D3F004CBD8C /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +118,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				C1889250114C0D3F004CBD8C /* AudioToolbox.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";

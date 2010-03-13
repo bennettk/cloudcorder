@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "MainView.h"
+#import "AudioToolbox/AudioToolbox.h" // for setting audio session
 
 
 @implementation MainViewController
@@ -29,6 +30,12 @@
 	 [playButton setAlpha:0.6];
 	 [playButton setEnabled:NO]; // don't enable play until a recording's been made...
 	 
+	 // set our audio session-- ideally you'd want to set up the record and play on an as-needed basis
+	 UInt32 category = kAudioSessionCategory_PlayAndRecord;	
+
+	 OSStatus err = AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(category), &category);
+	 err = AudioSessionSetActive(true);
+	 if (err) { NSLog(@"error setting audio session."); }
 	 
 	 // set up our recorder. 
 	 recordFile = [[NSURL fileURLWithPath:
@@ -97,7 +104,7 @@
 		[recordButton setTitle:@"stop" forState:UIControlStateNormal];
 	}
 	
-	NSLog(@"recordPressed.");
+	// NSLog(@"recordPressed.");
 }
 
 -(IBAction)playPressed {
